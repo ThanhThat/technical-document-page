@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 290px;
+  font-size: 1.6rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4d4e53;
+  background-color: #fff;
+  line-height: 1.5;
+}
+/* common */
+.mb-30 {
+  margin-bottom: 7rem;
+}
+
+header h1,
+header h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #000;
+  margin: 10px;
+  text-align: center;
+}
+
+header h2 {
+  text-align: left;
+}
+
+#navbar {
+  /* kích thước */
+  /* màu sắc */
+  /* vị trí */
+  /* hình dạng */
+  min-width: 290px;
+  width: 300px;
+  height: 100vh;
+  background-color: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar ul {
+  list-style: none;
+  height: 88%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  border-top: solid;
+  border-width: 1px;
+}
+
+.nav-link {
+  color: #4d4e53;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: block;
+}
+
+#main-doc {
+  margin-left: 31rem;
+  padding: 2rem;
+  position: absolute;
+}
+
+#main-doc header {
+  margin: 0;
+}
+
+.main-section article {
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+
+article > p {
+  margin: 1.5rem;
+}
+
+article ul {
+  margin-left: 6rem;
+}
+
+li > p {
+  margin: 1.5rem 0;
+}
+
+code {
+  background-color: #f7f7f7;
+  line-height: 2;
+  padding: 1.5rem;
+  margin: 1rem;
+  display: block;
+  border-radius: 5px;
+  white-space: pre-line;
+  word-break: normal;
+  word-wrap: normal;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    max-height: 27.5rem;
+    top: 0;
+    padding-bottom: 2rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  #navbar ul {
+    height: 20.7rem;
+    border: 1px solid;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    margin-top: 27.5rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 400px) {
+  #navbar {
+    max-height: 20rem;
+  }
+
+  #main-doc {
+    margin-left: -1.5rem;
+    margin-top: 20rem;
+    margin-right: -1.5rem;
+    text-align: justify;
+  }
+
+  article ul {
+    margin-left: 3rem;
+  }
+
+  code {
+    text-align: left;
+    margin: 6px 0;
+  }
+}
